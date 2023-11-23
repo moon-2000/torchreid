@@ -69,7 +69,6 @@ model = model.cuda()
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
 optimizer = torchreid.optim.build_optimizer(
     model,
     optim="adam",
@@ -97,6 +96,7 @@ scheduler = torchreid.optim.build_lr_scheduler(
 """
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 engine = torchreid.engine.ImageSoftmaxEngine(
     datamanager,
     model,
@@ -122,8 +122,8 @@ engine = torchreid.engine.ImageSoftmaxEngine(
 """
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 # Run training and test
+
 
 engine.run(
     save_dir="log/resnet50",
@@ -147,14 +147,14 @@ engine.run(
     test_only=False: If set to True, the model will only be tested, and no training will be performed. 
         In this case, it's set to False, indicating that both training and testing will be performed.
 """
-
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Citation and How-to user Guide
+
 
 """
     How-to user Guide: https://kaiyangzhou.github.io/deep-person-reid/user_guide 
-    
+
     @article{torchreid,
         title={Torchreid: A Library for Deep Learning Person Re-Identification in Pytorch},
         author={Zhou, Kaiyang and Xiang, Tao},
