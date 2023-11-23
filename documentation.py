@@ -150,9 +150,11 @@ engine.run(
 
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Citation
+# Citation and How-to user Guide
 
 """
+    How-to user Guide: https://kaiyangzhou.github.io/deep-person-reid/user_guide 
+    
     @article{torchreid,
         title={Torchreid: A Library for Deep Learning Person Re-Identification in Pytorch},
         author={Zhou, Kaiyang and Xiang, Tao},
