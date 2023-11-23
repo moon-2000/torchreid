@@ -147,3 +147,30 @@ engine.run(
     test_only=False: If set to True, the model will only be tested, and no training will be performed. 
         In this case, it's set to False, indicating that both training and testing will be performed.
 """
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Citation
+
+"""
+    @article{torchreid,
+        title={Torchreid: A Library for Deep Learning Person Re-Identification in Pytorch},
+        author={Zhou, Kaiyang and Xiang, Tao},
+        journal={arXiv preprint arXiv:1910.10093},
+        year={2019}
+    }
+
+    @inproceedings{zhou2019osnet,
+        title={Omni-Scale Feature Learning for Person Re-Identification},
+        author={Zhou, Kaiyang and Yang, Yongxin and Cavallaro, Andrea and Xiang, Tao},
+        booktitle={ICCV},
+        year={2019}
+    }
+
+    @article{zhou2021osnet,
+        title={Learning Generalisable Omni-Scale Representations for Person Re-Identification},
+        author={Zhou, Kaiyang and Yang, Yongxin and Cavallaro, Andrea and Xiang, Tao},
+        journal={TPAMI},
+        year={2021}
+    }
+"""
