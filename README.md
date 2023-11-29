@@ -24,7 +24,7 @@ python scripts/main.py \
 --root $PATH_TO_DATA \
   model.load_weights log/osnet_x1_0_market1501_softmax_cosinelr/model.pth.tar-250 \
   test.evaluate True \
-  test.visrank = True 
+  test.visrank True 
 ```
 
 
@@ -37,7 +37,20 @@ python scripts/main.py \
   --transforms random_flip random_erase \     
   --root ~/Desktop/ReID/TorchReID/FRIDA \     
   --data-type 'video'   
-  model.load_weights 'log/osnet_x1_0_market1501_softmax_cosinelr'    
+   
 ```
+
+### For Testing   
+```
+python scripts/main.py \     
+  --config-file configs/im_osnet_x1_0_softmax_256x128_amsgrad_cosine.yaml \    
+  -s FRIDA -t FRIDA \    
+  --root ~/Desktop/ReID/TorchReID/FRIDA \     
+  --data-type 'video'   
+  model.load_weights                                                'log/osnet_x1_0_market1501_softmax_cosinelr'
+  test.evaluate True \
+  test.visrank  True 
+```
+
 #### Need Help ?      
 Refer to: https://kaiyangzhou.github.io/deep-person-reid/user_guide.html
