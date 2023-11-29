@@ -1,6 +1,16 @@
 # torchreid
 
 ## OSNET model on Market1501   
+
+1- Download the Market1501 dataset from https://zheng-lab.cecs.anu.edu.au/Project/project_reid.html   
+2- Make sure to get the structure of the dataset as:   
+    market1501/
+        Market-1501-v15.09.15/
+            query/
+            bounding_box_train/
+            bounding_box_test/    
+3- Clone deep-person-reid repo from https://github.com/KaiyangZhou/deep-person-reid.git    
+
 ```
 python scripts/main.py \
 --config-file configs/im_osnet_x1_0_softmax_256x128_amsgrad_cosine.yaml \
