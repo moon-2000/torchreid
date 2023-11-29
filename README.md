@@ -31,4 +31,4 @@ python scripts/main.py \
 
 
 #### Need Help ?      
-Refer to: https://kaiyangzhou.github.io/deep-person-reid/ 
+Refer to: https://kaiyangzhou.github.io/deep-person-reid/user_guide.html
