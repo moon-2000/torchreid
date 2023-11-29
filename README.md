@@ -1,6 +1,6 @@
 # torchreid
 
-## OSNET model on Market1501   
+## OSNET model on Market1501 Image dataset   
 ### For Training    
 1- Download the Market1501 dataset from https://zheng-lab.cecs.anu.edu.au/Project/project_reid.html   
 2- Make sure to extract the dataset in market1501 foler.         
@@ -28,7 +28,16 @@ python scripts/main.py \
 ```
 
 
-
-
+## OSNET on FRIDA Video dataset  
+### For Training   
+```
+python scripts/main.py \     
+  --config-file configs/im_osnet_x1_0_softmax_256x128_amsgrad_cosine.yaml \    
+  -s FRIDA -t FRIDA \    
+  --transforms random_flip random_erase \     
+  --root ~/Desktop/ReID/TorchReID/FRIDA \     
+  --data-type 'video'   
+  model.load_weights 'log/osnet_x1_0_market1501_softmax_cosinelr'    
+```
 #### Need Help ?      
 Refer to: https://kaiyangzhou.github.io/deep-person-reid/user_guide.html
