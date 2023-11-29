@@ -4,7 +4,7 @@
 
 1- Download the Market1501 dataset from https://zheng-lab.cecs.anu.edu.au/Project/project_reid.html   
 2- Make sure to get the structure of the dataset as:   
-    market1501/     
+    market1501/             
         Market-1501-v15.09.15/     
             query/    
             bounding_box_train/     
