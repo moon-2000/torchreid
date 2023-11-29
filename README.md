@@ -26,3 +26,9 @@ python scripts/main.py \
   test.evaluate True \
   test.visrank = True 
 ```
+
+
+
+
+#### Need Help ?      
+Refer to: https://kaiyangzhou.github.io/deep-person-reid/ 
