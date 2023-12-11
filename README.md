@@ -47,7 +47,7 @@ python scripts/main.py
 --config-file configs/im_osnet_x1_0_softmax_256x128_amsgrad_cosine.yaml
  --sources FRIDAimg --targets FRIDAimg
 --root ~/Desktop/ReID/TorchReID/FRIDA
-model.load_weights ~/Desktop/ReID/TorchReID/dee-person-reid/log/osnet_x1_0_market1501_softmax_cosinelr/model/fridaimg_model.pth.tar-3
+model.load_weights ~/Desktop/ReID/TorchReID/deep-person-reid/log/osnet_x1_0_market1501_softmax_cosinelr/model/fridaimg_model.pth.tar-3
 test.evaluate True  test.visrank True
 ```
 
@@ -58,7 +58,7 @@ python scripts/main.py
 --config-file configs/im_osnet_x1_0_softmax_256x128_amsgrad_cosine.yaml
  --sources FRIDAimg --targets FRIDAimg
 --root ~/Desktop/ReID/TorchReID/FRIDA
-model.load_weights ~/Desktop/ReID/TorchReID/dee-person-reid/log/osnet_x1_0_market1501_softmax_cosinelr/model/market1501_model.pth.tar-250
+model.load_weights ~/Desktop/ReID/TorchReID/deep-person-reid/log/osnet_x1_0_market1501_softmax_cosinelr/model/market1501_model.pth.tar-250
 test.evaluate True  test.visrank True
 ```
 #### Need Help ?      
