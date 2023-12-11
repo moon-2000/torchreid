@@ -41,16 +41,25 @@ python scripts/main.py \
 ```
 
 ### For Testing   
+- Testing the FRIDA-trained model on FRIDA
 ```
-python scripts/main.py \     
-  --config-file configs/im_osnet_x1_0_softmax_256x128_amsgrad_cosine.yaml \    
-  -s FRIDA -t FRIDA \    
-  --root ~/Desktop/ReID/TorchReID/FRIDA \     
-  --data-type 'video'   
-  model.load_weights                                                'log/osnet_x1_0_market1501_softmax_cosinelr'
-  test.evaluate True \
-  test.visrank  True 
+python scripts/main.py
+--config-file configs/im_osnet_x1_0_softmax_256x128_amsgrad_cosine.yaml
+ --sources FRIDAimg --targets FRIDAimg
+--root ~/Desktop/ReID/TorchReID/FRIDA
+model.load_weights ~/Desktop/ReID/TorchReID/dee-person-reid/log/osnet_x1_0_market1501_softmax_cosinelr/model/fridaimg_model.pth.tar-3
+test.evaluate True  test.visrank True
 ```
 
+- Testing the Market1501-trained model on FRIDA   
+
+```
+python scripts/main.py
+--config-file configs/im_osnet_x1_0_softmax_256x128_amsgrad_cosine.yaml
+ --sources FRIDAimg --targets FRIDAimg
+--root ~/Desktop/ReID/TorchReID/FRIDA
+model.load_weights ~/Desktop/ReID/TorchReID/dee-person-reid/log/osnet_x1_0_market1501_softmax_cosinelr/model/market1501_model.pth.tar-250
+test.evaluate True  test.visrank True
+```
 #### Need Help ?      
 Refer to: https://kaiyangzhou.github.io/deep-person-reid/user_guide.html
