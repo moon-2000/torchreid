@@ -62,6 +62,9 @@ python scripts/main.py
 --root ~/Desktop/ReID/TorchReID/FRIDA
 model.load_weights ~/Desktop/ReID/TorchReID/deep-person-reid/log/osnet_x1_0_market1501_softmax_cosinelr/model/market1501_model.pth.tar-250
 test.evaluate True  test.visrank True
+
+python scripts/main.py --config-file configs/im_osnet_x1_0
+_softmax_256x128_amsgrad_cosine.yaml  --sources FRIDAimg --targets FRIDAimg --root ../FRIDA model.load_weights log/osnet_x1_0_market1501_softmax_cosinelr/model/model.pth.tar-250 test.evaluate True  test.visrank True
 ```
 #### Need Help ?      
 Refer to: https://kaiyangzhou.github.io/deep-person-reid/user_guide.html
